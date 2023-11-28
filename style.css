@@ -23,8 +23,8 @@
 }
 
 html, body {                      /* geldt voor html en body */
-  background-color: #a5b8ff;    /* achtergrondkleur lichtgrijs */
-  color: #ffffff;               /* tekstkleur donkergrijs */
+  color: #ffffff;     
+  background-image:linear-gradient(to right, rgb(255, 255, 255), rgb(110, 110, 255));         /* tekstkleur donkergrijs */
 }  
 
 div {                             /* geldt voor div */
@@ -51,6 +51,7 @@ header, footer {                  /* geldt voor header en footer */
 
 footer{
   font-family:'Courier New', Courier, monospace;
+  padding-top: 20px
 }
 
 main {                       
@@ -85,6 +86,16 @@ a:hover {                         /* <a> als je er met de muis op staat */
 .smalltext {
   text-align: center;
   font-size: 0.7em;
+}
+#hoofdtitel{
+  background-color: rgb(0, 115, 255);
+  color: aliceblue;
+  border-radius:10px ;
+  padding: 10px;
+  width:500px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /************************* NAVIGATIEBALK *************************/
@@ -127,17 +138,16 @@ nav li a.active {
 
 /* .item {} */ /* hier doen we nog niks mee, dat mag je zelf toevoegen */
 
-.item-plaatje {
+.item-plaatje1 {
   float: left;
-  width: 250px;
-  padding-right: 5px; /* zorgt dat plaatje niet tegen tekst komt */
-  
-  
-  
-  
+  width: 275px;
+  border: 10px;
+  border-color:cornflowerblue;
+  border-style:double;
+  border-radius:10px;/* zorgt dat plaatje niet tegen tekst komt */
 }
 
-.item-tekst {
+.item-tekst1 {
   float: right;
   width: 700px;
   
@@ -148,3 +158,8 @@ nav li a.active {
 /* Indeling en opmaak voor subpagina */
 
 /* verzin deze zelf... */
+.item-plaatje2{
+  float:right;
+  padding-left: 20px;
+
+}
