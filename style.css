@@ -5,7 +5,7 @@
    zodat je de afmeting goed kunt zien, 
    let op 1: dit kan de layout soms kan wijzigen 
    let op 2: laat 1 sterretje voor { staan als je commentaar weghaalt */
-/*  * {border: 1px dotted black;}   */
+ /*{border: 1px dotted black;} */  
   
 /* zorg dat elke box een doorzichtige donkere achtergrond krijgt, 
    hoe meer boxen in elkaar hoe donkerder de achtergrondkleur 
@@ -46,12 +46,15 @@ div {                             /* geldt voor div */
 
 header, footer {                  /* geldt voor header en footer */
   margin: 10px 0px;
+ 
   
 }
 
 footer{
   font-family:'Courier New', Courier, monospace;
-  padding-top: 20px
+ 
+  
+  
 }
 
 main {                       
@@ -85,17 +88,18 @@ a:hover {                         /* <a> als je er met de muis op staat */
 
 .smalltext {
   text-align: center;
-  font-size: 0.7em;
+  
 }
 #hoofdtitel{
-  background-color: rgb(0, 115, 255);
+  background-color: rgb(0, 15, 175);
   color: aliceblue;
   border-radius:10px ;
   padding: 10px;
-  width:500px;
+  
   text-align: center;
   margin-left:auto;
   margin-right:auto;
+  border: 10px double rgb(131, 170, 255);
 }
 
 /************************* NAVIGATIEBALK *************************/
@@ -108,19 +112,24 @@ nav ul {                        /* <ul> die child is van <nav> */
   padding: 0;
   background-color: rgb(0, 10, 105);
   overflow: hidden;
+  border-radius:25px;
 
 }
 
 nav ul li {                     /* <li> die child is van <ul> die op zijn beurt child is van <nav> */
-  float: left;
+  float:left;
+  
+  padding:5px;
 }
 
 nav li a {
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
+  float:center;
+  border-radius: 20px;
 }
 
 nav li a:hover {
@@ -131,7 +140,10 @@ nav li a.active {
   background-color: rgb(70, 70, 255);
 }
 
-
+nav ul {
+  width:fit-content;
+  margin:auto;
+}
 /************************* HOOFDPAGINA *************************/
 
 /* Indeling en opmaak voor hoofdpagina */
@@ -161,5 +173,6 @@ nav li a.active {
 .item-plaatje2{
   float:right;
   padding-left: 20px;
+  padding-bottom: 10px;
 
 }
